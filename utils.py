@@ -16,8 +16,8 @@ def map_and_filter(s, map_fn, filter_fn):
     [1, 9, 25]
     """
     # BEGIN Question 0
-    "*** REPLACE THIS LINE ***"
-    return ['REPLACE THIS WITH YOUR LIST COMPREHENSION']
+    map = [map_fn for x in s if filter_fn]
+    return map
     # END Question 0
 
 def key_of_min_value(d):
@@ -29,9 +29,9 @@ def key_of_min_value(d):
     >>> key_of_min_value(letters)
     'c'
     """
-    # BEGIN Question 0
+    dKey = [d, lambda x: x]
     "*** REPLACE THIS LINE ***"
-    return min('REPLACE THIS WITH YOUR SOLUTION')
+    return min(dictValues)
     # END Question 0
 
 def zip(*sequences):
